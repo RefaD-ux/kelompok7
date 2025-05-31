@@ -1,0 +1,155 @@
+/* Font & Body */
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Headings */
+h1, h2, h5 {
+    color: #b35c00;
+}
+
+/* Navbar */
+nav.nav {
+    background: linear-gradient(90deg, #a36116, #e39b2a);
+    box-shadow: 0 3px 6px rgba(163, 97, 22, 0.6);
+}
+nav.nav .nav-link {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+nav.nav .nav-link:hover, nav.nav .nav-link:focus {
+    color: #ffdf7e;
+    text-decoration: underline;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #eee;
+}
+body.dark-mode nav.nav {
+    background: linear-gradient(90deg, #3d2600, #6b3c00);
+    box-shadow: 0 3px 6px rgba(100, 70, 30, 0.8);
+}
+body.dark-mode nav.nav .nav-link {
+    color: #f7d469;
+}
+body.dark-mode nav.nav .nav-link:hover, body.dark-mode nav.nav .nav-link:focus {
+    color: #fff3c4;
+    text-decoration: underline;
+}
+
+/* Dark Mode Button */
+.btn-dark {
+    background-color: #a36116;
+    border-color: #a36116;
+    font-weight: 600;
+}
+.btn-dark:hover, .btn-dark:focus {
+    background-color: #e39b2a;
+    border-color: #e39b2a;
+    color: #333;
+}
+
+/* Hero Section */
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 0.2em;
+}
+#home h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1em;
+}
+#home p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #5c3a00;
+}
+body.dark-mode #home p {
+    color: #d9b75f;
+}
+#home img.profile-img {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(163, 97, 22, 0.4);
+    max-height: 350px;
+}
+
+/* About Section */
+#about {
+    background: linear-gradient(135deg, #f2dce2, #e6c1a3);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(180, 100, 20, 0.25);
+}
+body.dark-mode #about {
+    background: linear-gradient(135deg, #3a2918, #5d3e11);
+    box-shadow: 0 6px 12px rgba(100, 60, 10, 0.8);
+}
+
+/* Services Section */
+#services h2 {
+    margin-bottom: 1rem;
+}
+#services .tab-content {
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+body.dark-mode #services .tab-content {
+    background-color: #272727;
+    color: #ddd;
+}
+
+/* Portfolio Cards */
+.card-group .card {
+    margin: 0 10px;
+    box-shadow: 0 8px 16px rgba(163, 97, 22, 0.2);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.card-group .card:hover {
+    transform: scale(1.05);
+}
+body.dark-mode .card-group .card {
+    box-shadow: 0 8px 16px rgba(200, 170, 60, 0.4);
+    background-color: #222;
+    color: #eee;
+}
+
+/* Resume Button */
+.btn-black {
+    background-color: #b35c00;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 0.6rem 1.8rem;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.btn-black:hover {
+    background-color: #e39b2a;
+    color: #333;
+}
+
+/* Blog Section */
+#blog {
+    background-color: #f8f9fa;
+}
+body.dark-mode #blog {
+    background-color: #1c1c1c;
+}
+
+/* Footer */
+footer {
+    font-weight: 400;
+}
+footer a {
+    color: #f7d469;
+    transition: color 0.3s ease;
+}
+footer a:hover, footer a:focus {
+    color: #fff3c4;
+}
